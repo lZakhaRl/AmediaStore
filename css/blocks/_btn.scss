@@ -1,0 +1,56 @@
+.btn {
+  display: inline-block;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $white;
+  padding: 1.7rem 3.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: $black;
+  border: none;
+
+  transition: background 0.2s linear, color 0.2s linear;
+
+  &:hover {
+    background: $red;
+  }
+
+  &.wide {
+    min-width: 23rem;
+  }
+
+  &.ultra__wide {
+    display: block;
+    width: 100%;
+  }
+
+  &.gray {
+    background: $light-gray;
+    color: $black;
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+  }
+
+  &.red {
+    background: $red;
+    color: $black;
+
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 1.5rem 2rem;
+  }
+
+  @media (max-width: 650px) {
+    padding: 1rem 2rem;
+  }
+}

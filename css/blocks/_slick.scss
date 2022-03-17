@@ -1,0 +1,34 @@
+.slick-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid 10px black;
+  border-width: 0 3px 3px 0;
+
+  font-size: 0;
+  text-decoration: none;
+  background-color: transparent;
+
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+
+  @media (max-width: 1024px) {
+    border-width: 0 2px 2px 0;
+  }
+}
+
+.slick-next {
+  right: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+  margin-right: 3rem;
+}
+
+.slick-prev {
+  left: 0;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+
+  margin-left: 3rem;
+}
